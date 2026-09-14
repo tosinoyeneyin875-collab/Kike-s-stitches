@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kikelomo's Crochet Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+            color: #333;
+        }
+
+        .header {
+            background-color: #e8a0bf;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .header p {
+            margin: 5px 0 0 0;
+        }
+
+        .nav {
+            background-color: #d4849a;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            color: #c45c7a;
+            border-bottom: 2px solid #e8a0bf;
+            padding-bottom: 5px;
+        }
+
+        .main-img {
+            display: block;
+            margin: 20px auto;
+            border: 3px solid #e8a0bf;
+            border-radius: 8px;
+            max-width: 100%;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product {
+            background-color: white;
+            border: 2px solid #e8a0bf;
+            border-radius: 10px;
+            width: 220px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            margin: 10px 0 5px 0;
+            color: #c45c7a;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #2e7d32;
+            font-size: 18px;
+        }
+
+        button {
+            background-color: #e8a0bf;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: #d4849a;
+        }
+
+        .contact-form {
+            max-width: 400px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #e8a0bf;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            height: 80px;
+        }
+
+        .footer {
+            background-color: #e8a0bf;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .product {
+                width: 90%;
+            }
+            .nav a {
+                display: block;
+                margin: 8px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Kikelomo's Crochet Shop</h1>
+        <p>Handmade crochet items 🧶</p>
+    </div>
+
+    <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div id="home" class="section">
+        <h2>Welcome!</h2>
+        <p>Hello, this is a shop for crochet.</p>
+        <img src="https://picsum.photos/id/1015/400/250" alt="crochet stuff" class="main-img">
+    </div>
+
+    <div id="products" class="section">
+        <h2>My Products</h2>
+        <p>Everything is handmade by me. Prices are in Naira.</p>
+
+        <div class="products">
+
+            <div class="product">
+                <img src="https://picsum.photos/id/106/200/200" alt="beanie">
+                <h3>Beanie Hat</h3>
+                <p>Warm and soft. Good for harmattan.</p>
+                <p class="price">₦4,500</p>
+                <button onclick="alert('Order sent! I will message you on WhatsApp')">Order</button>
+            </div>
+
+            <div class="product">
+                <img src="https://picsum.photos/id/225/200/200" alt="scarf">
+                <h3>Long Scarf</h3>
+                <p>Very soft yarn. Can choose colour.</p>
+                <p class="price">₦6,000</p>
+                <button onclick="alert('Order sent! I will message you on WhatsApp')">Order</button>
+            </div>
+
+            <div class="product">
+                <img src="https://picsum.photos/id/1080/200/200" alt="bag">
+                <h3>Crochet Bag</h3>
+                <p>Small bag for phone and keys.</p>
+                <p class="price">₦5,500</p>
+                <button onclick="alert('Order sent! I will message you on WhatsApp')">Order</button>
+            </div>
+
+            <div class="product">
+                <img src="https://picsum.photos/id/201/200/200" alt="coasters">
+                <h3>Coaster Set (4pcs)</h3>
+                <p>Cute round coasters.</p>
+                <p class="price">₦3,000</p>
+                <button onclick="alert('Order sent! I will message you on WhatsApp')">Order</button>
+            </div>
+
+            <div class="product">
+                <img src="https://picsum.photos/id/30/200/200" alt="keychain">
+                <h3>Keychain</h3>
+                <p>Small and cute. Many colours available.</p>
+                <p class="price">₦1,500</p>
+                <button onclick="alert('Order sent! I will message you on WhatsApp')">Order</button>
+            </div>
+
+            <div class="product">
+                <img src="https://picsum.photos/id/96/200/200" alt="amigurumi">
+                <h3>Amigurumi Toy</h3>
+                <p>Little animal. I can make different ones.</p>
+                <p class="price">₦7,500</p>
+                <button onclick="alert('Order sent! I will message you on WhatsApp')">Order</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        Everything here is made by hand, so please be patient if I take some days to finish your order 🙏</p>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact / Order</h2>
+        <p>Just click the Order button on any product or message me on WhatsApp.</p>
+        <p><strong>WhatsApp:</strong> 09136541227</p>
+        <p>Or fill the form bellow</p>
+
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! I will reply soon')">
+            <input type="text" placeholder="Your name" required><br>
+            <input type="text" placeholder="Your WhatsApp number" required><br>
+            <textarea placeholder="What do you want to order?"></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Kikelomo's Crochet Shop — Made with love 🧶</p>
+    </div>
+
+</body>
+</html>
